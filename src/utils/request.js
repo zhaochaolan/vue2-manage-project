@@ -15,7 +15,7 @@ service.interceptors.request.use(config => {
     config.headers['Content-Type'] = 'application/json';
     return config
 },error => {
-    return Promise.reject(error)
+    Promise.reject(error)
 })
 
 //添加响应拦截器
